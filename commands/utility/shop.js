@@ -1,5 +1,5 @@
-const economy = require('../economy/economy');
-const coinConfig = require('../economy/coin');
+const economy = require('../../economy/economy');
+const coinConfig = require('../../economy/coin');
 
 // Memory for shops
 const userShops = {}; 

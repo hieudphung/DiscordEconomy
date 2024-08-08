@@ -1,7 +1,7 @@
 // quests.js
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const economy = require('../economy/economy');
-const dailyQuests = require('../quests/dailyQuests'); // Import the daily quests
+const economy = require('../../economy/economy');
+const dailyQuests = require('../../quests/dailyQuests'); // Import the daily quests
 
 let currentDailyQuest = null;
 

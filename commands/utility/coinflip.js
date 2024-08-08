@@ -1,5 +1,5 @@
 const { MessageActionRow, MessageButton } = require('discord.js');
-const economy = require('../economy/economy');
+const economy = require('../../economy/economy');
 
 // game
 async function coinFlip(message, guess, betAmount) {
@@ -8,7 +8,7 @@ async function coinFlip(message, guess, betAmount) {
 
     // Choosing the bet amount
     if (betAmount <= 0 || betAmount > balance) {
-        return message.reply("You're too broke to bet that much.");
+        return message.reply("You're too broke to bet that much. 😂");
     }
 
     // Outcome of game
