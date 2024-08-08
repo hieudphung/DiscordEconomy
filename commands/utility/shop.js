@@ -1,4 +1,4 @@
-const economy = require('../../economy/economy');
+/*const economy = require('../../economy/economy');
 const coinConfig = require('../../economy/coin');
 
 // Memory for shops
@@ -58,4 +58,4 @@ module.exports = {
     editShop,
     buyItem,
     displayShop,
-};
+};*/
