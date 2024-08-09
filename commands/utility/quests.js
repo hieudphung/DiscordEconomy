@@ -1,13 +1,13 @@
-// quests.js
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const economy = require('../../economy/economy');
-const dailyQuests = require('../../quests/dailyQuests'); // Import the daily quests
+const dailyQuests = require('../../quests/dailyQuests');
 
 let currentDailyQuest = null;
 
 // Function to get a new daily quest
 function getNewDailyQuest() {
     currentDailyQuest = dailyQuests[Math.floor(Math.random() * dailyQuests.length)];
+    return currentDailyQuest;
 }
 
 // Function to handle quest acceptance

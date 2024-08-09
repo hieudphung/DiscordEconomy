@@ -1,4 +1,3 @@
-// Quests library
 const dailyQuests = [
     { name: 'Valorant Daily Quest', reward: 100 },
     { name: 'League Of Legends Daily Quest', reward: 150 },
@@ -9,4 +8,6 @@ const dailyQuests = [
     { name: 'Minecraft Daily Quest', reward: 120 },
 ];
 
-module.exports = dailyQuests;
+module.exports = {
+    dailyQuests,
+};
