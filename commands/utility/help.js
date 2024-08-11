@@ -1,3 +1,35 @@
+const { SlashCommandBuilder } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
+
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('help')
+        .setDescription('A list of all commands and what they do.'),
+    async execute(interaction) {
+        const commands = interaction.client.commands.map(command => ({
+            name: `/${command.data.name}`,
+            description: command.data.description,
+        }));
+
+        // Start of embed
+        const helpEmbed = new EmbedBuilder()
+            .setTitle('📖 Help Menu 📖')
+            .setDescription('Available commands:')
+            .setColor('#C3B1E1');
+
+        // Pull name and descr
+        commands.forEach(command => {
+            helpEmbed.addFields({ name: command.name, value: command.description });
+        });
+
+        await interaction.reply({ embeds: [helpEmbed] });
+    },
+};
+
+/*
+
+manually updating help menu
+
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { EmbedBuilder } = require('discord.js');
 
@@ -21,7 +53,7 @@ module.exports = {
         // Embed message
         const embed = new EmbedBuilder()
             .setTitle('📖 Help Menu 📖')
-            .setColor('#C0C0C0')
+            .setColor('#C3B1E1')
             .setDescription('A list of all commands.')
             .setFooter({ text: 'Use / before each command.' });
 
@@ -32,3 +64,6 @@ module.exports = {
         await interaction.reply({ embeds: [embed] });
     },
 };
+
+
+*/
