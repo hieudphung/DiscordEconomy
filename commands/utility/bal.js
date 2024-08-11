@@ -5,6 +5,6 @@ module.exports = {
         .setName('balance')
         .setDescription('Check your coin balance!'),
     async execute(interaction) {
-        await interaction.reply('𝕮0');
+        await interaction.reply('💲0');
     },
 };
