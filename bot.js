@@ -1,6 +1,13 @@
 // Load env variables
 require('dotenv').config(); 
 
+const { createClient } = require('@supabase/supabase-js');
+
+// Create a single supabase client for interacting with your database
+const supabaseUrl = 'https://epcdjsifdxntqrrmujto.supabase.co';
+const supabase = createClient(supabaseUrl, process.env.SUPABASE_KEY);
+module.exports = { supabase }
+
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
