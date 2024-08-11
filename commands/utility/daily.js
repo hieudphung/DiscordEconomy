@@ -8,12 +8,12 @@ module.exports = {
     
     async execute(interaction) {
         const userId = interaction.user.id;
-
+        const serverId = interaction.guild?.id;
         // Give X coins
         const reward = 5;
-        economy.addCoins(userId, reward);
+        const balance = await economy.addBal(userId, serverId, reward)
 
         // Bot Message
-        await interaction.reply(`${interaction.user.username}, you have claimed your daily reward of ${reward} coins!`);
+        await interaction.reply(`${interaction.user.username}, you have claimed your daily reward of ${reward} coins!\n You're new balance is ${balance}`);
     },
 };
