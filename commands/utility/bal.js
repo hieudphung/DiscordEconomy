@@ -4,8 +4,7 @@ const { supabase } = require('../../bot.js')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('balance')
-        .setDescription('💰 Check your coin balance!'),
-
+        .setDescription('Check your balance!'),
     async execute(interaction) {
         const balance = await getBal(interaction.user.id, interaction.guild?.id)
         await interaction.reply(`Your balance is: 💲${balance}`);
