@@ -3,7 +3,7 @@ const { SlashCommandBuilder } = require('discord.js');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('shop')
-        .setDescription('Replies with Pong!'),
+        .setDescription('🏪 Shows shop!'),
     async execute(interaction) {
         /*const userId = message.author.id;
         if (!userShops[userId]) {

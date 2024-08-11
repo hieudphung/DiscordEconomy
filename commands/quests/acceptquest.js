@@ -5,7 +5,7 @@ const { currentDailyQuest } = require('../../quests/dailyQuests');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('acceptquest')
-        .setDescription('Accepts the daily quest.'),
+        .setDescription('✔️ Accepts the daily quest.'),
     async execute(interaction) {
         if (currentDailyQuest) {
             const userId = interaction.user.id;

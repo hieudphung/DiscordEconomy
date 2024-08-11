@@ -6,7 +6,7 @@ const userShops = {};
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('editshop')
-        .setDescription('Replies with Pong!')
+        .setDescription('✏️ Replies with Pong!')
         .addStringOption(option =>
             option
                 .setName('item')

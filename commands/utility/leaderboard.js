@@ -5,7 +5,7 @@ const { getLeaderboard } = require('../../economy/economy');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('leaderboard')
-        .setDescription('Displays a leaderboard of the top 5 richest members.'),
+        .setDescription('🏆 Displays a leaderboard of the top 5 richest members.'),
     async execute(interaction) {
         const leaderboard = await getLeaderboard();
 

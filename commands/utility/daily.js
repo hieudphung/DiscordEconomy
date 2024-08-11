@@ -4,7 +4,7 @@ const economy = require('../../economy/economy');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('daily')
-        .setDescription('Claim the daily coins reward.'),
+        .setDescription('⏰ Claim the daily coins reward.'),
     
     async execute(interaction) {
         const userId = interaction.user.id;

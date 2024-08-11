@@ -4,7 +4,7 @@ const economy = require('../../economy/economy');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('coinflip')
-        .setDescription('Flip a coin and bet your coins.')
+        .setDescription('🎰 Flip a coin and bet your coins.')
         .addStringOption(option => 
             option.setName('guess')
                 .setDescription('Your guess: heads or tails')

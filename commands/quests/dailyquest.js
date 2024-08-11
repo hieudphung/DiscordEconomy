@@ -4,7 +4,7 @@ const { getCurrentDailyQuest } = require('../../quests/dailyQuests');
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('dailyquest')
-        .setDescription('Displays the current daily quest.'),
+        .setDescription('📜 Displays the current daily quest.'),
     async execute(interaction) {
         const currentDailyQuest = getCurrentDailyQuest();
         if (currentDailyQuest) {
