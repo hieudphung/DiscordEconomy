@@ -13,7 +13,7 @@ module.exports = {
 
         // Start of embed
         const helpEmbed = new EmbedBuilder()
-            .setTitle('📖 Help Menu 📖')
+            .setTitle('🔍 Help Menu 📌')
             .setDescription('Available commands:')
             .setColor('#C3B1E1');
 
