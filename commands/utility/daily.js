@@ -14,6 +14,6 @@ module.exports = {
         const balance = await economy.addBal(userId, serverId, reward)
 
         // Bot Message
-        await interaction.reply(`${interaction.user.username}, you have claimed your daily reward of ${reward} coins!\n You're new balance is ${balance}`);
+        await interaction.reply(`${interaction.user.username}, you have claimed your daily reward of 💸${reward} coins!\nYour new balance is 💸${balance}`);
     },
 };

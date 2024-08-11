@@ -10,6 +10,6 @@ module.exports = {
         const userId = interaction.user.id;
         const serverId = interaction.guild?.id;
         const balance = await economy.getBal(userId, serverId)
-        await interaction.reply(`Your balance is: 💲${balance}`);
+        await interaction.reply(`Your balance is: 💸${balance}`);
     },
 };

@@ -8,6 +8,10 @@ const dailyQuests = [
     { name: 'Minecraft Daily Quest', reward: 120 },
 ];
 
+function getCurrentDailyQuest() {
+    
+}
+
 module.exports = {
     dailyQuests,
 };
